@@ -10,3 +10,32 @@ void heapsort(T data[], int n){
         moveDown(data, 0, i - 1);  //rebuild the heap
     }
 }
+
+template <typename T>
+void moveDown(T data[], int first, int last){
+
+    int largest;
+    int left;
+    int right;
+
+    while (2 * first + 1 <= last) {
+
+        left = 2 * first + 1;
+        right = 2 * first + 2;
+
+        largest = left;
+
+        if (right <= last && data[right] > data[left]) {
+            largest = right;
+        }
+
+        if (data[first] < data[largest]) {
+            break;
+        }
+
+        swap(data[first], data[largest]);
+
+        first = largest;
+    }
+
+}

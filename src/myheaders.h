@@ -13,4 +13,5 @@ int		readfile(string infilename, long data[]);
 int		writefile(long data[], long size, string outfilename);
 void	swap(long& x, long& y);
 void    heapsort(long data[], long n);
+void    moveDown(long data[], int first, int last);
 
