@@ -16,4 +16,6 @@ void    heapsort(long data[], long n);
 void    moveDown(long data[], int first, int last);
 void    quicksort(long data[], int n);
 void    quicksort(long data[], int first, int last);
+void    Shellsort(long data[], int n);
+void    bubblesort(long data[], int n);
 
