@@ -18,4 +18,5 @@ void    quicksort(long data[], int n);
 void    quicksort(long data[], int first, int last);
 void    Shellsort(long data[], int n);
 void    bubblesort(long data[], int n);
-
+void    mergesort(long data[], int first, int last);
+void    merge(long data[], int first, int last);

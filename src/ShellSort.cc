@@ -1,6 +1,6 @@
 #include "myheaders.h"
 void Shellsort( long data[], int n) {
-	register int i, j, hCnt, h;
+	int i, j, hCnt, h;
 	int increments[20], k;
 	for (h = 1, i = 0; h < n; i++) {
 		increments[i] = h;

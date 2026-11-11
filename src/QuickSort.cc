@@ -1,12 +1,11 @@
 #include "myheaders.h"
 
 
-template <typename T>
-void quicksort(T data[], int first, int last){
+void quicksort(long data[], int first, int last){
     int lower = first + 1;
     int upper = last;
     swap(data[first], data[(first + last) / 2]);
-    T bound = data[first];
+    long bound = data[first];
     while (lower <= upper) {
         while (bound > data[lower]){
             lower++;
@@ -31,8 +30,7 @@ void quicksort(T data[], int first, int last){
 
 }
 
-template<class T>
-void quicksort(T data[], int n){
+void quicksort(long data[], int n){
     int i, max;
     if (n < 2) {
         return;

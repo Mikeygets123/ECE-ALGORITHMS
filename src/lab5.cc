@@ -46,14 +46,17 @@ int main() {
 			
 					break;
 
-			case 2: // Sort function A
+			case 2: // Sort function BUBBLE SORT
 
                     // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
+					for (int i = 0; i < sz; i++) {
+						wData[i] = data[i];
+					}
                     
                     
 					begin_time = clock();   // start cpu timer
-			
-					// Call your Sort function A here to sort the array 'wData''
+					
+					bubblesort(wData, sz);
 			        //  Note that 'wData' is of size 'sz' (see case 1).
 
 
@@ -61,9 +64,9 @@ int main() {
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Bubble Sort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_A_out.txt";
+					ofilename = "lab5_Bubble_out.txt";
 					writefile(wData, sz, ofilename);
 					
 					if (sz < 0)	 {
@@ -75,16 +78,19 @@ int main() {
 			
 					break;
 
-			case 3: // Sort function B
+			case 3: // Sort function HEAP SORT
 			
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
+					for (int i = 0; i < sz; i++) {
+						wData[i] = data[i];
+					}
 			        
 			        
 					begin_time = clock();   // start cpu timer
 			
 
-			
-					// Call your Sort function B here to sort the array 'wData'
+					
+					heapsort(wData, sz);
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
 
 
@@ -92,9 +98,9 @@ int main() {
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "(Heap Sort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_B_out.txt";
+					ofilename = "lab5_Heap_out.txt";
 					writefile(wData, sz, ofilename);
 					
 					if (sz < 0)	 {
@@ -106,21 +112,24 @@ int main() {
 			
 					break;
 					
-			case 4: //sort function c
+			case 4: //sort function SHELL SORT
 					//copy array elements into working array
+					for (int i = 0; i < sz; i++) {
+						wData[i] = data[i];
+					}
 
 					begin_time = clock();   // start cpu timer
 			
 			        //  Note that 'wData' is of size 'sz' (see case 1).
-					//	CALL SORT FUNCTION HERE FOR WORKING ARRAY
+					Shellsort(wData, sz);
 
 			
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Shell Sort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_A_out.txt";
+					ofilename = "lab5_Shell_out.txt";
 					writefile(wData, sz, ofilename);
 					
 					if (sz < 0)	 {
@@ -134,21 +143,25 @@ int main() {
 
 					// Write the other cases 4 - 7 here		
 			
-			case 5: //sort function d
+			case 5: //sort function QUICK SORT
 					//copy array elements into working array
+					for (int i = 0; i < sz; i++) {
+						wData[i] = data[i];
+					}
 
 					begin_time = clock();   // start cpu timer
 			
 			        //  Note that 'wData' is of size 'sz' (see case 1).
 					//	CALL SORT FUNCTION HERE FOR WORKING ARRAY
+					quicksort(wData, sz);
 
 			
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Quick Sort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_A_out.txt";
+					ofilename = "lab5_Quick_out.txt";
 					writefile(wData, sz, ofilename);
 					
 					if (sz < 0)	 {
@@ -159,22 +172,25 @@ int main() {
 					else cout << endl << "Output written to " << ofilename << endl;
 			
 					break;
-			case 6: //sort function e
+			case 6: //sort function MERGE SORT
 					//copy array elements into working array
+					for (int i = 0; i < sz; i++) {
+						wData[i] = data[i];
+					}
 
 					begin_time = clock();   // start cpu timer
 			
 			        //  Note that 'wData' is of size 'sz' (see case 1).
 					//	CALL SORT FUNCTION HERE FOR WORKING ARRAY
-
+					mergesort(wData, 0, (sz - 1));
 
 			
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Merge Sort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_A_out.txt";
+					ofilename = "lab5_Merge_out.txt";
 					writefile(wData, sz, ofilename);
 					
 					if (sz < 0)	 {
@@ -185,8 +201,12 @@ int main() {
 					else cout << endl << "Output written to " << ofilename << endl;
 			
 					break;
-			case 7: //sort function f
+			case 7: //sort function ???
 					//copy array elements into working array
+					for (int i = 0; i < sz; i++) {
+						wData[i] = data[i];
+					}
+					
 
 					begin_time = clock();   // start cpu timer
 			
