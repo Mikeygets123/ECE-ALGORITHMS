@@ -21,8 +21,6 @@ void	mergesort(long data[], long first, long last) {
 			return;
 }
 
-
-
 // Merge - merges left and right sub-arrays of the input array, in order
 
 void	merge(long d[], long first, long last) {
