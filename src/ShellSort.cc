@@ -10,7 +10,7 @@ void Shellsort( long data[], int n) {
 	    h = increments[i];
 		for (hCnt = h; hCnt < 2*h; hCnt++) {							
 			for (j = hCnt; j < n; ) {			
-				T tmp = data[j];
+				long tmp = data[j];
 				k = j;
 				while (k-h >= 0 && tmp < data[k-h]) {
 				    data[k] = data[k-h];
