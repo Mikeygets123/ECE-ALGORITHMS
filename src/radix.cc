@@ -54,22 +54,4 @@ void radixSort(vector<int>& arr) {
         arr[i] = static_cast<int>(shifted[i] + minVal);
 }
 
-void printArray(const vector<int>& arr) {
-    for (int x : arr)
-        cout << x << " ";
-    cout << "\n";
-}
 
-int main() {
-    vector<int> arr = {170, 45, 75, 90, 802, 24, 2, 66, -15, -300};
-
-    cout << "Original array: ";
-    printArray(arr);
-
-    radixSort(arr);
-
-    cout << "Sorted array:   ";
-    printArray(arr);
-
-    return 0;
-}
