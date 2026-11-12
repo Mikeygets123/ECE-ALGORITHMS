@@ -7,7 +7,8 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "/Users/lucaspatten/ECE-ALGORITHMS/src/lab5.cc",
+                "/Users/lucaspatten/ECE-ALGORITHMS/src/helper_fns.cc",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],

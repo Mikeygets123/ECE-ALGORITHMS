@@ -90,7 +90,7 @@ int main() {
 			
 
 					
-					heapsort(wData, sz);
+					heap_sort(wData, sz);
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
 
 

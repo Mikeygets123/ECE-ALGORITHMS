@@ -1,6 +1,6 @@
 #include "myheaders.h"
 
-void heapsort(long data[], int n){
+void heap_sort(long data[], int n){
     for (int i = n/2 - 1; i >= 0; --i){ //create the heap
         moveDown(data, i, n - 1);
     }

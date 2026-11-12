@@ -3,7 +3,7 @@
 
 // Mergesort - recursively divides input array until we get sub-arrays of size 1
 
-void	mergesort(long data[], long first, long last) {
+void	mergesort(long data[], int first, int last) {
 
 			if (first < last) {  // i.e. array is of size 2 or larger
 
@@ -23,7 +23,7 @@ void	mergesort(long data[], long first, long last) {
 
 // Merge - merges left and right sub-arrays of the input array, in order
 
-void	merge(long d[], long first, long last) {
+void	merge(long d[], int first, int last) {
 
 		long	mid, i1, i2, i3;
 		long	tmp[last-first+1];
