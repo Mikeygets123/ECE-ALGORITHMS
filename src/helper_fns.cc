@@ -17,7 +17,7 @@ void	printmenu() {
 			cout << "  4: Sort using Shell Sort" << endl;
 			cout << "  5: Sort using Quick Sort" << endl;			
 			cout << "  6: Sort using Merge Sort" << endl;
-			cout << "  7: Sort using ??? Sort" << endl;
+			cout << "  7: Sort using Radix Sort" << endl;
 			cout << "  0: Exit program" << endl;
 			cout << endl << "Enter your choice: ";
 
