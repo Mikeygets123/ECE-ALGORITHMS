@@ -27,7 +27,7 @@ void moveDown(long data[], int first, int last){
             largest = right;
         }
 
-        if (data[first] < data[largest]) {
+        if (data[first] >= data[largest]) {
             break;
         }
 
