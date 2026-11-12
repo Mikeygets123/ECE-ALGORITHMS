@@ -5,7 +5,6 @@
  *      Author: caellum-heinlein
  */
 
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
