@@ -1,5 +1,5 @@
 
-bool is_sorted(long arr[], int size) {
+bool is_sorted(long arr[], long size) {
     if (size <= 1) {
         return true; // An array with 0 or 1 element is considered sorted
     }

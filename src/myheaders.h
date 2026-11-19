@@ -21,3 +21,4 @@ void    bubblesort(long data[], int n);
 void    mergesort(long data[], int first, int last);
 void    merge(long data[], int first, int last);
 void    combsort(long* arr, int n);
+bool    is_sorted(long data[], long size);

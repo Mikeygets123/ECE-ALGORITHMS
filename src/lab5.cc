@@ -76,6 +76,12 @@ int main() {
 						return 0;
 					}
 					else cout << endl << "Output written to " << ofilename << endl;
+					if(is_sorted(wData, sz)){
+						cout << endl << "Array is sorted." << endl;
+					}
+					else{
+						cout << endl << "Array is NOT sorted." << endl;
+					}
 			
 					break;
 
@@ -110,6 +116,12 @@ int main() {
 						return 0;
 					}
 					else cout << endl << "Output written to " << ofilename << endl;
+					if(is_sorted(wData, sz)){
+						cout << endl << "Array is sorted." << endl;
+					}
+					else{
+						cout << endl << "Array is NOT sorted." << endl;
+					}
 			
 					break;
 					
@@ -139,6 +151,12 @@ int main() {
 						return 0;
 					}
 					else cout << endl << "Output written to " << ofilename << endl;
+					if(is_sorted(wData, sz)){
+						cout << endl << "Array is sorted." << endl;
+					}
+					else{
+						cout << endl << "Array is NOT sorted." << endl;
+					}
 			
 					break;
 
@@ -171,6 +189,12 @@ int main() {
 						return 0;
 					}
 					else cout << endl << "Output written to " << ofilename << endl;
+					if(is_sorted(wData, sz)){
+						cout << endl << "Array is sorted." << endl;
+					}
+					else{
+						cout << endl << "Array is NOT sorted." << endl;
+					}
 			
 					break;
 			case 6: //sort function MERGE SORT
@@ -200,6 +224,12 @@ int main() {
 						return 0;
 					}
 					else cout << endl << "Output written to " << ofilename << endl;
+					if(is_sorted(wData, sz)){
+						cout << endl << "Array is sorted." << endl;
+					}
+					else{
+						cout << endl << "Array is NOT sorted." << endl;
+					}
 			
 					break;
 			case 7: //sort function COMB SORT
@@ -230,9 +260,16 @@ int main() {
 						return 0;
 					}
 					else cout << endl << "Output written to " << ofilename << endl;
+					if(is_sorted(wData, sz)){
+						cout << endl << "Array is sorted." << endl;
+					}
+					else{
+						cout << endl << "Array is NOT sorted." << endl;
+					}
 			
 					break;															
 			case 0: // Exit Program
+					
 
 					cout << endl << "Received program exit command - I QUIT!" << endl << endl;
 
