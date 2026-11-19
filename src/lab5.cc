@@ -19,7 +19,8 @@ using namespace std;
 int main() {
 	
 	int		choice, sz;
-	long	data[MAXSIZE], wData[MAXSIZE];
+	long* data = new long[MAXSIZE];
+	long* wData = new long[MAXSIZE];
 	double  begin_time, end_time, cpu_time_used;
 	string  ifilename, ofilename;
 	

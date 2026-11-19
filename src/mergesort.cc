@@ -26,7 +26,7 @@ void	mergesort(long data[], int first, int last) {
 void	merge(long d[], int first, int last) {
 
 		long	mid, i1, i2, i3;
-		long	tmp[last-first+1];
+		long* tmp = new long[last-first+1];
 
 		mid = (first + last)/2;
 		i1 = 0;				// start index of tmp[]
@@ -50,6 +50,7 @@ void	merge(long d[], int first, int last) {
 
 		// Now, copy back the contents of tmp[] into d[]
 		for (i1 = 0; i1 < (last-first+1); ++i1)	 d[first+i1] = tmp[i1];
-	
-		return;
+		delete[] tmp;
+
+	return;
 }
