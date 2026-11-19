@@ -36,7 +36,7 @@ int main() {
 					// If the file could not be read, 'readfile' returns -1
 				
 					ifilename = "lab5_input.txt";
-					sz = readfile(ifilename, data);
+					sz = (readfile(ifilename, data));
 			
 					if (sz < 0)	 {
 						cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
@@ -202,7 +202,7 @@ int main() {
 					else cout << endl << "Output written to " << ofilename << endl;
 			
 					break;
-			case 7: //sort function ???
+			case 7: //sort function COMB SORT
 					//copy array elements into working array
 					for (int i = 0; i < sz; i++) {
 						wData[i] = data[i];
@@ -213,7 +213,7 @@ int main() {
 			
 			        //  Note that 'wData' is of size 'sz' (see case 1).
 					//	CALL SORT FUNCTION HERE FOR WORKING ARRAY
-
+					combsort(wData, sz);
 
 			
 					end_time = clock();		// end cpu timer
