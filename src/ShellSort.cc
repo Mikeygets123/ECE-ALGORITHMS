@@ -1,3 +1,6 @@
+//Mikey
+
+
 #include "myheaders.h"
 void Shellsort( long data[], int n) {
 	int i, j, hCnt, h;

@@ -36,7 +36,7 @@ int main() {
 					// If the file could not be read, 'readfile' returns -1
 				
 					ifilename = "lab5_input.txt";
-					sz = (readfile(ifilename, data)) / 2;
+					sz = (readfile(ifilename, data));
 			
 					if (sz < 0)	 {
 						cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
